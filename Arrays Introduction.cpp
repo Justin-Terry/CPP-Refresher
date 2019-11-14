@@ -1,0 +1,25 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int t, n;
+    cin >> n;
+    int nums[n];
+
+    for(int i = 0; i < n; i++){
+        cin >> t;
+        nums[i] = t;
+    }
+
+    for(int i = n-1; i >= 0; i--){
+        cout << nums[i] << " ";
+    }
+
+    return 0;
+}
